@@ -404,7 +404,7 @@ def pilih_indo():
             op = json.loads(jok.text)
             print ' \x1b[0;97m[\x1b[0;94m\xe2\x80\xa2\x1b[0;97m] Nama Akun : ' + op['name']
         except KeyError:
-            print '  \n\x1b[0;97m[\x1b[0;91m\xc3\x97\x1b[0;97m] ID Publik / friend doesn't exist !'
+            print '  \n\x1b[0;97m[\x1b[0;91m\xc3\x97\x1b[0;97m] ID Publik / friend not exist !'
             raw_input('\n\x1b[0;92m[ \x1b[0;97mBack \x1b[0;92m]')
             indo()
         except requests.exceptions.ConnectionError:
